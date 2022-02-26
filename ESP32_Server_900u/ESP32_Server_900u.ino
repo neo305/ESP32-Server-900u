@@ -18,7 +18,7 @@
 
 
                      // use FatFS not SPIFFS [ true / false ]
-#define USEFAT false // FatFS will be used instead of SPIFFS for the storage filesystem or for larger partitons on boards with more than 4mb flash.
+#define USEFAT true // FatFS will be used instead of SPIFFS for the storage filesystem or for larger partitons on boards with more than 4mb flash.
                      // you must select a partition scheme labeled with "FAT" or "FATFS" with this enabled.
 
                     // enable internal goldhen.h [ true / false ]
@@ -43,7 +43,7 @@
 //create access point
 boolean startAP = true;
 String AP_SSID = "kameleon900_ESP32-S2";
-String AP_PASS = "123456789";
+String AP_PASS = "";
 IPAddress Server_IP(10,1,1,1);
 IPAddress Subnet_Mask(255,255,255,0);
 
